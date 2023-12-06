@@ -1,0 +1,308 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+body {
+  background-color: lightgray;
+  font-family: arial;
+  margin: 0;
+}
+
+.content {
+  width: fit-content;
+  display: grid;
+  grid-template-columns: 8.25% auto 11.5%;
+  grid-template-rows: auto fit-content auto;
+  font-size: 18px;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 2fr));
+  grid-auto-flow: row;
+  font-size: 20px;
+  background-color: #333;
+  color: white;
+  grid-column: 1/4;
+}
+
+.navbar img{
+  color: white;
+  height: 20px;
+  width: 20px;
+}
+
+.navbar a{
+  color: white;
+  padding: 14px 0px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+.home_button img {
+  color: white;
+  height: 20px;
+  width: 20px;
+}
+
+.block2 {
+  grid-row: 2/4;
+  width: 100%;
+  min-width: fit-content;
+  padding: 5%;
+  background-color: #3E3F43;
+}
+
+.block2 a {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 17.5px;
+  width: 35px;
+  height: 35px;
+  margin: 28% 35%;
+}
+
+.block2 img {
+  height: 25px;
+  width: 25px;
+}
+
+.block3 {
+  font-size: 18px;
+  grid-column: 2/4;
+  padding: 10px;
+  line-height: 30px;
+  background-color: gold;
+  text-align: right;
+}
+
+.block4 {
+  grid-row: 3/4;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 5%;
+  margin: 2%;
+  background-color: white;
+}
+
+
+
+.block4 img{
+  grid-column: 1/2;
+  border: 1px solid rgb(220, 220, 220);
+  padding: 2%;
+  width: 100%;
+  border-radius: 15px;
+}
+
+.block4 .column_item{
+  grid-column: 2/3;
+}
+
+.block4 h1, h2{
+  font-size: 30px;
+  margin-left: 10%;
+}
+
+.block4 h1{
+}
+
+.description{
+
+  grid-column: 1/3;
+  padding-top: 5%;
+  justify-content: start;
+  flex-direction: column;
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 25px;
+  color: #777;
+}
+
+.characteristic_item{
+  grid-column: 1/3;
+  border-top: 1px solid rgb(220, 220, 220);
+  color: #777;
+  line-height: 50px;
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+}
+.characteristic_name{
+  grid-column: 1/2;
+  width: 50%;
+}
+.characteristic_value{
+  grid-column: 2/3;
+  width: 50%;
+}
+
+.description h2{
+  font-size: 25px;
+  color: #000;
+  margin: 0;
+}
+
+
+.code{
+  margin-top: 10px;
+  margin-left: 10%;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.availability{
+  margin-top: 10px;
+  margin-left: 10%;
+}
+
+.price{
+  border: 1px solid rgb(220, 220, 220);
+  border-radius: 15px;
+  margin: 10%;
+  padding: 10%;
+  margin-left: 10%;
+}
+.price b{
+  font-size: 30px;
+}
+
+.price a{
+  padding: 3%;
+  padding-right: 7%;
+  padding-left: 7%;
+  font-size: 20px;
+  border-radius: 20px;
+  background-color: rgb(118, 207, 81);
+}
+
+.price a:visited{
+  color: #fff;
+}
+.price a:link{
+  color: #fff;
+}
+
+.price a:hover{
+  background-color: rgb(64, 159, 57);
+}
+
+.price a:active{
+  background-color: rgb(64, 200, 40);
+}
+
+.block5 {
+
+  flex-direction: none;
+  font-size: 18px;
+  grid-row: 3/4;
+  font-size: 100%;
+  color: white;
+  background-color: #3E3F43;
+  padding: 10%;
+  color: #fff;
+  line-height: 30px;
+  overflow-wrap: break-word;
+}
+
+
+.footer{
+  background-color: #333;
+  color: white;
+  grid-column: 1/4;
+  padding: 3%;
+  display: grid;
+
+}
+
+
+.footer_item{
+  align-self: end;
+  justify-self: end;
+/*  text-align: right;*/
+  padding: 5px;
+  border: 1px solid white;
+}

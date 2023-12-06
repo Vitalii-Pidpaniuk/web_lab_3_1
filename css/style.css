@@ -1,0 +1,317 @@
+@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+body {
+  background-color: lightgray;
+  font-family: arial;
+  margin: 0;
+}
+
+
+.content{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+}
+
+
+
+.navbar {
+  font-size: 20px;
+  top: 0;
+  position: sticky;
+  background-color: #333;
+  color: white;  
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.navbar a{
+  flex-grow: 1;
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.navbar img{
+  color: white;
+  height: 20px;
+  width: 20px;
+}
+.row{
+  display: flex;
+  flex-direction: row;
+  flex:1;
+}
+
+.column{
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.block2 {
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2%;
+  background-color: #3E3F43;
+}
+
+.block2 a{
+  margin: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 17.5px;
+  height: 35px;
+  width: 35px;
+}
+.block2 img{
+  height: 25px;
+  width: 25px;
+}
+
+.block3{
+  height: fit-content;
+  background-color: gold;
+  text-align: right;
+  line-height: 30px;
+  padding: 10px;
+}
+
+.block4 {
+  margin: 2%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+
+  flex-wrap: wrap;
+}
+
+.block4 img{
+  width: 100%;
+}
+
+.main_text {
+  line-height: 25px;
+  display: flex;
+  padding: 4%;
+  flex-wrap: wrap;
+
+  flex-direction: row;
+/*  flex-shrink: 1;*/
+}
+
+.main_text1{
+  width: 40%;
+  min-width: 250px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.main_text2{
+  width: 60%;
+  min-width: 250px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.main_text1 b{
+  font-weight: normal;
+}
+.main_text2 b{
+  font-weight: normal;
+}
+
+.main_text1 h1{
+  font-size: 30px;
+}
+.main_text2 h1{
+  font-size: 30px;
+}
+
+.block5 {
+  font-size: 100%;
+  background-color: white;
+  width: 20%;
+  background-color: #3E3F43;
+  padding: 1%;
+  color: #fff;
+  line-height: 30px;
+  overflow-wrap: break-word;
+}
+
+
+.footer{
+  background-color: #333;
+  bottom: 0;
+  color: white;
+  display: flex;
+  justify-content: end;
+  padding: 3%;
+}
+
+
+.footer_item{
+  padding: 5px;
+  border: 1px solid white;
+}
+
+
+@media only screen and (max-device-width: 767px) {
+
+  .content{
+    height: fit-content;
+    flex-grow: 0;
+    min-height: 100%;
+  }
+
+  .navbar{
+    position: relative;
+    font-size: 50px;
+  }
+
+  .block2{
+  }  
+
+  .block2 a{
+  margin: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 25px;
+  height: 50px;
+  width: 50px;
+}
+.block2 img{
+  height: 40px;
+  width: 40px;
+}
+
+  .main_text{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .main_text h1{
+    font-size: 90px;
+    line-height: 110px;
+  }
+
+  .main_text1, .main_text2{
+    font-size: 50px;
+    line-height: 60px;
+    width: 100%;
+  }
+
+  .row{
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .block2, .block5, .block3{
+    font-size: 50px;
+    line-height: 60px;
+    justify-content: center;
+    width: 100%;
+    flex-direction: row;
+  }
+
+  .block4{
+/*    justify-content: center;*/
+    flex-grow: 1;
+    height: 100%;
+  }
+
+  .footer{
+    font-size: 50px;
+  }
+}
